@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href=""> <img src="C:\Users\User\Desktop\Новая папка (2)\img\pngwing.com.png" alt="" class="logo"></a>
+            <ul class="navigation">
+                <li><a href="">home</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">What's New</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Test the Feeling</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ad quasi, numquam fuga aliquid harum fugit alias quisquam sapiente assumenda aut doloremque inventore, molestiae minima dolore dolorem deserunt, aspernatur eius.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="img\1644831504_new_preview_1514751641577.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img\1644831504_new_preview_1514751641577.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img\1644831504_new_preview_1514751641577.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img\1644831504_new_preview_1514751641577.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img\1644831504_new_preview_1514751641577.png" alt=""></div>
+                      <div class="swiper-slide"><img src="img\1644831504_new_preview_1514751641577.png" alt=""></div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div>
+            <ul class="sci">
+                <li><a href=""><img src="img\faceb.png" alt=""></a></li>
+                <li><a href=""><img src="img\twit.png" alt=""></a></li>
+                <li><a href=""><img src="img\inst.png" alt=""></a></li>
+            </ul>
+        </div>
+    </section>
+    <div>
+        
+
+  <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 250px;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .swiper-slide img {
+      position: absolute;
+      bottom: 0;
+      max-height: 100%;
+    }
+  </style>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+    </div>
+</body>
+</html>
